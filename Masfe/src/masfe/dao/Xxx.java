@@ -34,4 +34,8 @@ public class Xxx {
 
 	    }
 	
+	public String getData(int value){
+		return "Hello";
+	}
+	
 }
