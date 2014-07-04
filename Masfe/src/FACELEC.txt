@@ -1,0 +1,64 @@
+Modulo Adaptable Soluci�n Calculadora
+SAFEM
+
+Normas:
+    No repetir codigo 
+    Usar Interfaces las veces que se consideren convenientes
+    No hacer commit hasta que se consideren necesario (tarea terminada) asegurarse de que el codigo este sin 
+    errores
+    No trabajar fuera del versionador
+    Usar lengua extranjera (Ingles)
+    JPA generico
+
+
+Definir standar:
+
+Codigo Fuente - NetBeans IDE 8.0
+    Nombres Clases:
+        CamelCase.java 
+        Cometar todo el codigo 
+
+    Nombre M�todos y Funciones(Verbo)
+        camelCase Ej: sumar
+
+    Instancias 	
+        objCamelCase
+
+    Variables:
+        empieza con el tipo de datos (3 letras) 
+        ej.: intContador, intAcumulador
+
+    Propiedades
+        case_case 
+
+    No quemar String 
+       Contantes (may�sculas)
+       Propiedades (ej Rutas)
+       consulta BD
+
+    Nombres Controles (Usar las letras mas descriptibas del nombre del control
+                      seguido por la descrpcion del control en PascalCase)
+        Ejemplo:
+            txt  txtNombreUsuario
+            lbl  
+            grd
+            cmb
+            chk
+            pnl
+            
+Base Datos MySql  
+    Nombre Tablas
+        ModPascalCases
+        Ejem:  FacCabeceraComprobantes
+        Ejem:  FacCodigoComprobantes
+        Ejem:  CfgCodigoCompanias
+    Nombre Campos
+        camel_case
+        Ejem:  codigo_secuencia    
+     Tipo de datos
+        Crear tipos de datos 
+        Crear errores 
+
+
+log de sucesos
+ log4j
