@@ -56,11 +56,12 @@ public class Consumidor {
        }
 		 if (respuestaRecepcion.getEstado().equals("RECIBIDA"))
 		 {
-			 System.out.println("Documento recibido");
+			 System.out.println("\n Documento recibido");
 			 
-			 Thread.currentThread(); Thread.sleep(this.emisor.getTiempoEspera().intValue() * 1000);
+			 //Thread.currentThread(); Thread.sleep(this.emisor.getTiempoEspera().intValue() * 1000);
              respuestaAutoriz = AutorizacionComprobantesWs.autorizarComprobanteIndividual(claveAccesoComprobante, f.getName(), this.emisor.getTipoAmbiente());
-  
+             	
+             System.out.println("\n Documento recibido" + respuestaAutoriz);
              String estado = null;
              String resultado = null;
              if (respuestaAutoriz.lastIndexOf("|") != -1) 
@@ -86,6 +87,7 @@ public class Consumidor {
 		 }
 		 else if (respuestaRecepcion.getEstado().equals("DEVUELTA"))
         {
+			 System.out.println("Documento DEVUELTA");
 		  String resultado = FormGenerales.insertarCaracteres(EnvioComprobantesWs.obtenerMensajeRespuesta(respuestaRecepcion), "\n", 160);
 			 
           String dirFirmados = "C:\\firma\\xmlF";
@@ -112,7 +114,7 @@ public class Consumidor {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
-		String rutaArchivo = "C:\\firma\\xmlF\\prueba.xml";
+		String rutaArchivo = "C:\\firma\\xmlF\\0412201301091913450200010020010000000240000005910.xml";
 		
 		Consumidor Prueba = new Consumidor();
 		Prueba.envioIndividual(rutaArchivo);

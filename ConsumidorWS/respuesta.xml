@@ -3,12 +3,12 @@
     <estado>DEVUELTA</estado>
     <comprobantes>
         <comprobante>
-            <claveAcceso>N/A</claveAcceso>
+            <claveAcceso>0412201301091913450200010020010000000240000005910</claveAcceso>
             <mensajes>
                 <mensaje>
                     <identificador>35</identificador>
                     <mensaje>ARCHIVO NO CUMPLE ESTRUCTURA XML</mensaje>
-                    <informacionAdicional>No existe un contribuyente registrado con el RUC 0921251096</informacionAdicional>
+                    <informacionAdicional>Se encontró el siguiente error en la estructura del comprobante: cvc-pattern-valid: Value '05  ' is not facet-valid with respect to pattern '04|05|06|07' for type 'tipoIdentificacionComprador'.</informacionAdicional>
                     <tipo>ERROR</tipo>
                 </mensaje>
             </mensajes>
