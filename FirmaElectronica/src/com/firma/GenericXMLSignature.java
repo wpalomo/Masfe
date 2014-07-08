@@ -294,7 +294,7 @@ public abstract class GenericXMLSignature {
             
  
     
-            for (Enumeration e = ks.aliases(); e.hasMoreElements();) {
+            for (Enumeration<?> e = ks.aliases(); e.hasMoreElements();) {
                 String alias = (String) e.nextElement();
                 System.out.println("@:" + alias);
             }
