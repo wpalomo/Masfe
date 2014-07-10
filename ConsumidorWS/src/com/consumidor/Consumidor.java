@@ -114,7 +114,7 @@ public class Consumidor {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
-		String rutaArchivo = "C:\\firma\\xmlF\\0412201301091913450200010020010000000240000005910.xml";
+		String rutaArchivo = "C:\\firma\\xmlF\\1007201401092754614300110010010000000031234567819.xml";
 		
 		Consumidor Prueba = new Consumidor();
 		Prueba.envioIndividual(rutaArchivo);

@@ -3,12 +3,12 @@
     <estado>DEVUELTA</estado>
     <comprobantes>
         <comprobante>
-            <claveAcceso>0412201301091913450200010020010000000240000005910</claveAcceso>
+            <claveAcceso>160820130109275461430011001001000000003123456781</claveAcceso>
             <mensajes>
                 <mensaje>
                     <identificador>35</identificador>
                     <mensaje>ARCHIVO NO CUMPLE ESTRUCTURA XML</mensaje>
-                    <informacionAdicional>Se encontró el siguiente error en la estructura del comprobante: cvc-pattern-valid: Value '05  ' is not facet-valid with respect to pattern '04|05|06|07' for type 'tipoIdentificacionComprador'.</informacionAdicional>
+                    <informacionAdicional>Se encontró el siguiente error en la estructura del comprobante: cvc-pattern-valid: Value '160820130109275461430011001001000000003123456781' is not facet-valid with respect to pattern '[0-9]{49}' for type 'claveAcceso'.</informacionAdicional>
                     <tipo>ERROR</tipo>
                 </mensaje>
             </mensajes>
