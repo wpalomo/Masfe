@@ -16,7 +16,7 @@ public class FormGenerales {
 	    	
 	    	//String url, Integer puerto, String usuario, String clave, String wsProduccion, String wsPruebas 
 	       configuracion = new Proxy();
-	       configuracion.setWsProduccion("https://celcer.sri.gob.ec/comprobantes-electronicos-ws/RecepcionComprobantes?wsdl");
+	       configuracion.setWsProduccion("https://celcer.sri.gob.ec");
 	       configuracion.setWsPruebas("https://celcer.sri.gob.ec");
 	     } catch (Exception ex) {
 	       System.out.println("Proxy mal configurado");

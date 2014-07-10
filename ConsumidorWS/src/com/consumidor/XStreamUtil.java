@@ -2,6 +2,9 @@ package com.consumidor;
 
 import java.io.Writer;
 
+//- The type org.xmlpull.v1.XmlPullParser cannot be resolved. It is indirectly referenced from required .class files
+//- The type org.xmlpull.v1.XmlPullParserException cannot be resolved. It is indirectly referenced from 
+ //required .class files
 
 
 import com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl;

@@ -28,7 +28,7 @@ public class Consumidor {
 		File f = new File(RutaArchivo) ;
 		
 		emisor =  new Emisor();
-		emisor.setTiempoEspera(3);
+		emisor.setTiempoEspera(6);
 		emisor.setRuc("0927546143001");
 		/*emisor.setNombreComercial();
 		emisor.setDirEstablecimiento();
@@ -58,7 +58,7 @@ public class Consumidor {
 		 {
 			 System.out.println("\n Documento recibido");
 			 
-			 //Thread.currentThread(); Thread.sleep(this.emisor.getTiempoEspera().intValue() * 1000);
+			 Thread.currentThread(); Thread.sleep(this.emisor.getTiempoEspera().intValue() * 1000);
              respuestaAutoriz = AutorizacionComprobantesWs.autorizarComprobanteIndividual(claveAccesoComprobante, f.getName(), this.emisor.getTipoAmbiente());
              	
              System.out.println("\n Documento recibido" + respuestaAutoriz);
