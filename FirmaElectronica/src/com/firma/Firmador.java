@@ -87,7 +87,7 @@ public class Firmador extends GenericXMLSignature {
     
     public static void main(String... args) throws IOException {
         //if (args.length == 3) {    
-        Firmador prueba = new Firmador("C:\\firma\\xml\\pruebas.xml", "C:\\firma\\xmlF\\prueba.xml", "TH2010mas");
+        Firmador prueba = new Firmador("C:\\firma\\xml\\2207201401092754614300110010010000000150000000418.xml", "C:\\firma\\xmlF\\2207201401092754614300110010010000000150000000418.xml", "TH2010mas");
         prueba.firmar();
         System.out.println("TODO OK");
         /* } else {
