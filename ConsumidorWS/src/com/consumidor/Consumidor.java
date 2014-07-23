@@ -51,8 +51,7 @@ public class Consumidor {
 		
 	 if ((tipoComprobante != null) && (claveAccesoComprobante != null))
        {
-		
-		respuestaRecepcion = EnvioComprobantesWs.obtenerRespuestaEnvio(f, this.emisor.getRuc(), tipoComprobante, claveAccesoComprobante, FormGenerales.devuelveUrlWs(this.emisor.getTipoAmbiente(), "RecepcionComprobantes"));
+			respuestaRecepcion = EnvioComprobantesWs.obtenerRespuestaEnvio(f, this.emisor.getRuc(), tipoComprobante, claveAccesoComprobante, FormGenerales.devuelveUrlWs(this.emisor.getTipoAmbiente(), "RecepcionComprobantes"));
        }
 		 if (respuestaRecepcion.getEstado().equals("RECIBIDA"))
 		 {
@@ -80,8 +79,7 @@ public class Consumidor {
               {
             	  System.out.println( "El comprobante fue guardado, firmado y enviado exitósamente, pero no fue Autorizado\n" + estado + "\n" + resultado + "Respuesta");
               }
-  
-             
+        
   
               f.delete();
 		 }
@@ -114,7 +112,7 @@ public class Consumidor {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
-		String rutaArchivo = "C:\\firma\\xmlF\\1007201401092754614300110010010000000031234567819.xml";
+		String rutaArchivo = "C:\\firma\\xmlF\\2207201401092754614300110010010000000150000000418.xml";
 		
 		Consumidor Prueba = new Consumidor();
 		Prueba.envioIndividual(rutaArchivo);
